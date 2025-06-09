@@ -36,6 +36,9 @@ let package = Package(
             name: "LiteSwiftGraphExample", 
             targets: ["LiteSwiftGraphExample"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/swiftlang/swift-docc-plugin", from: "1.1.0"),
+    ],
     targets: [
         // Core library target (all platforms)
         .target(
